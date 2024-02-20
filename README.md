@@ -143,7 +143,7 @@ Now that all tests have passed the server is ready to be used at http://127.0.0.
    - Endpoint : http://127.0.0.1:8000/api/notes/:id
    - Method : `PUT`
    - Request Body :
-     ```json
+     ```js
      {
         "title": "Update note with version",
         "content": "Frist version should be added. New content added after the old content" // always the entire content is passed. Changes and version tracking is done my backend system.
@@ -172,7 +172,7 @@ Now that all tests have passed the server is ready to be used at http://127.0.0.
      }
      ```
    - Successful Response: (status code = 200)
-     ```json
+     ```js
      {
         "data": [
           "Notes shared with username = UniqueUserName", // user exists
@@ -190,7 +190,7 @@ Now that all tests have passed the server is ready to be used at http://127.0.0.
      }
      ```
    - Successful Response: (status code = 200)
-     ```json
+     ```js
      [
       { // old version
         "createdAt": "2024-02-20T11:10:55.404469Z",
